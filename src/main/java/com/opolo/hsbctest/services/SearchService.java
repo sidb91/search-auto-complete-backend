@@ -30,7 +30,7 @@ public class SearchService {
 
 		try {
 			HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-			System.out.println("------Response API-----------" + response.body());
+			//System.out.println("------Response API-----------" + response.body());
 			
 			ObjectMapper mapper = new ObjectMapper();
 			mapper.configure(DeserializationFeature.FAIL_ON_NULL_FOR_PRIMITIVES, true);
